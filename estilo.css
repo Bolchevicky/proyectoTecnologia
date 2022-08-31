@@ -1,0 +1,312 @@
+/* index */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background-image: url(/imagenes/imagen\ fondo2.jpg);
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.log{
+    height: 40px
+}
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: o 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+
+lia.active,li a:hover{
+    background: #000090;
+    transition: .05s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 952px) {
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px
+    }
+    
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+        nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+        nav ul li a{
+        font-size: 20px;
+    }
+
+        li a.hover, li a.active{
+        background: none;
+        color: #fff;
+    } 
+
+    #check:checked ~ ul{
+        left:0;
+    }
+    
+}
+
+/* contacto */
+
+.contact {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+    height: 10%;
+}
+.logo span {
+    color: #1f0eb7;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #3057d6;
+}
+
+.contact-form form button {
+    background: #1f0eb7;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #3057d6;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.contact-info h4 {
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: larger;
+}
+
+@media(min-width: 700px) {
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+
+@media(max-width: 600px) {
+    .contact-form form p{
+        grid-column: 1 / 3;
+    }
+    
+}
+@media only screen and (max-width: 840px) and (min-width: 550px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-form form p{
+        grid-column: 1 / 3;
+    }
+    
+}
+}
+
+/* quienes somos */
+
+.navquienes{
+    height: 80px;
+    width: 100%;
+    background: none;
+
+}
+
+.somos{
+    background-color: rgba(4, 5, 49, 0.4);
+    background-image: url(/imagenes/imagen\ fondo2.jpg);
+    height: 100vh;
+    background-size: cover;
+
+
+}
+.quienessomos{
+
+    color: white;
+    line-height: 100px;
+}
+
+.texto{
+    color: white;
+    height: 80px;
+    width: 100%;
+}
+.contenedorquienesomos{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 60%;
+    padding: 100px;
+    margin-left: 30px;
+
+}
+.mainsomos{
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
+
+
+@media (max-width: 952px) {
+
+    .contenedorquienesomos{
+        width: 80%;
+        padding: 0;
+        height: 100%;
+    }
+
+    .mainsomos{
+        height: 100%;
+        width: 100%;
+        line-height: 22px;
+    }
+    
+    
+    
+
+      
+
+
+    
+}
