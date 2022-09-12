@@ -147,6 +147,13 @@ ul {
     font-size: 2em;
     height: 10%;
 }
+.textcontra {
+    text-align: justify;
+    margin: 2em;
+    font-size: 1em;
+    height: 10%;
+}
+
 
 .logo span {
     color: #1f0eb7;
