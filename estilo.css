@@ -131,7 +131,9 @@ lia.active,li a:hover{
     padding: 1.5em;
 
 }
-
+.parrafo {
+    text-align: justify;
+}
 ul {
     list-style: none;
     padding: 0;
@@ -146,6 +148,12 @@ ul {
     text-align: center;
     font-size: 2em;
     height: 10%;
+}
+.logo3 {
+    text-align: center;
+    font-size: 3em;
+    height: 10%;
+    margin: 0.5em;
 }
 .textcontra {
     text-align: justify;
